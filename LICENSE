@@ -1,0 +1,35 @@
+Z-Image TE Prompt Enhancer
+Copyright (C) 2026 the Z-Image TE Prompt Enhancer contributors
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along
+with this program. If not, see <https://www.gnu.org/licenses/>.
+
+The full license text is also available in the LICENSE file at the root of the
+SD WebUI Forge Neo distribution this extension is installed into, and at:
+
+    https://www.gnu.org/licenses/agpl-3.0.txt
+
+---------------------------------------------------------------------------
+
+Third-party notice
+
+The prompt templates under `lib_ztpe/presets.py` derive from the Prompt
+Enhancer of the Tongyi-MAI Z-Image-Turbo Hugging Face Space, which is
+distributed under the Apache License 2.0:
+
+    https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+
+The `official` preset is a verbatim copy of that project's `pe.py`
+`prompt_template`. The `official (translated)` preset is an English
+translation produced by this project and is labelled as such in the UI.
