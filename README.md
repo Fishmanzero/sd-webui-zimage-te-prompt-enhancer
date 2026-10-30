@@ -9,20 +9,6 @@
 
 ---
 
-## 与另外两个扩展的关系
-
-`extensions/` 下已有两个同类扩展，本扩展是第三个、也是重写版：
-
-| 扩展 | 状态 |
-|---|---|
-| `sd-webui-zimage-prompt-enhancer` | 存在 3 个必现缺陷（双重 RMSNorm、`ensure_loaded` 传错对象、OOM 分支不可达），实际不可用 |
-| `zimage-qwen3-prompt-enhancer` | **静默失效**：它把 `past_key_values=[]` 传给 `Llama2_.forward`，该参数被 `**kwargs` 吞掉，返回 2 元组后 `output[2]` 抛 IndexError 并被吞，每次都会回退原文 |
-| 本扩展 `zimage-te-prompt-enhancer` | 绕开 `Llama2_.forward` 自己跑层循环，KV 路径已用合成模型做过数值等价验证 |
-
-三者会在 UI 里各有一个面板。建议只启用本扩展，另两个可自行移除。
-
----
-
 ## 安装
 
 ```
